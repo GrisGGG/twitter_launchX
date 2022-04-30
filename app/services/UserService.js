@@ -9,5 +9,8 @@ class UserService{
         return [user.id, user.username, user.name, user.bio, user.dateCreated, user.lastUpdate]
     }
     //Requeriment 3
+    static updateUserUsername(user, name){
+        return user.username = name
+    }
 }
 module.exports = UserService
