@@ -28,5 +28,6 @@ describe("Test for UserService", () =>{
             expect(usernames).toContain("grisGGG1") 
             expect(usernames).toContain("grisGGG2") 
             expect(usernames).toContain("grisGGG3")                    
-    });
+    });   
 })
+
