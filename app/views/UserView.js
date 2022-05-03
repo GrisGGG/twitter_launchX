@@ -26,9 +26,13 @@ indicando `necesitan tener un valor válido`. */
         const error = {error: "necesitan tener un valor válido"}
         return error;
         }
-
-
-
+//Requeriment 5.1 4
+/*4. Verifica que se pueda crear un objeto `User`, al enviar un payload con las 
+siguientes propiedades: `username`, `id` y `name`.
+ */
+        else{
+            return UserService.create(payload.id, payload.username, payload.name)
+        }
 
 }
 }
