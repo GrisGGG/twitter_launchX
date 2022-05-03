@@ -19,6 +19,17 @@ Si hay un valor `null` regresa un objeto con la llave `error` y que indique el t
            const error = {error: "necesitan tener un valor válido"}
             return error;
         }
+//Requeriment 5.1 3
+/*Valida que un `payload` con algunas de las propiedades necesarias regrese un objeto con la llave `error`
+indicando `necesitan tener un valor válido`. */
+        if(!payload.id || !payload.username || !payload.name == null){
+        const error = {error: "necesitan tener un valor válido"}
+        return error;
+        }
+
+
+
+
 }
 }
 
