@@ -15,16 +15,10 @@ y el valor indique `payload no existe`. */
 //Requeriment 5.1 2     
 /*Valida que un `payload` contenga en alguna de las llaves `username`, `name`, o `id` un valor en `null`. 
 Si hay un valor `null` regresa un objeto con la llave `error` y que indique el texto: `necesitan tener un valor válido`.*/
-        if(payload.id || payload.username || payload.name == null){
+        if(!payload.id || !payload.username || !payload.name ){
            const error = {error: "necesitan tener un valor válido"}
             return error;
         }
-/*
-3. Valida que un `payload` con algunas de las propiedades necesarias regrese un objeto con la llave `error`
-indicando `necesitan tener un valor válido`.
-*/
-
-
 }
 }
 
